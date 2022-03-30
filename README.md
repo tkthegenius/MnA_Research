@@ -4,3 +4,6 @@ company names and stock codes and retrieve vital financial and basic information
 
 please make sure to have the first row have the columns 'Name' and 'Code' as the first two column names. 
 Otherwise it won't work. 
+
+Required packages(install using pip):
+pandas, yfinance, gooey, os, json, time, datetime 
