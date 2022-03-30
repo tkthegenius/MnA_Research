@@ -8,7 +8,6 @@ import yfinance as yf
 from gooey import Gooey, GooeyParser
 
 sleepCount = 0
-keysToGet = ['fullTimeEmployees', 'city', 'state', 'country','profitMargins', 'grossMargins', 'operatingMargins','grossProfits','totalRevenue']
 
 @Gooey(program_name="Company Financial Data Collector", menu=[{'name': 'File', 'items': [{
     'type': 'AboutDialog',
@@ -50,14 +49,9 @@ def parse_args():
                         widget='Listbox',
                         help="Parameters you would like to retrieve",
                         nargs="+",
-                        choices=['zip',
-                            'sector',
-                            'fullTimeEmployees',
-                            'longBusinessSummary',
-                            'city',
-                            'phone',
-                            'state',
-                            'totalRevenue', 'profitMargin']
+                        choices=[
+                            'fullTimeEmployees','city','state','country','website','ebitdaMargins','profitMargins','grossMargins','operatingCashflow','revenueGrowth','operatingMargins','ebitda','grossProfits','freeCashflow','targetMedianPrice','currentPrice','earningsGrowth','currentRatio','returnOnAssets','targetMeanPrice','returnOnEquity','totalCash','totalDebt','totalRevenue','financialCurrency','market','totalAssets','bookValue'
+                        ]
                         )
     args = parser.parse_args()
     # Store the values of the arguments so we have them next time we run
