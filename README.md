@@ -7,3 +7,7 @@ Otherwise it won't work.
 
 Required packages(install using pip):
 pandas, yfinance, gooey, os, json, time, datetime 
+
+to create an executable stand-alone application from this code, run 
+
+pyinstaller -F --windowed build.spec 
