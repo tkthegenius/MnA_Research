@@ -33,9 +33,9 @@ def mustBeFile(pathway):
            'menuTitle': 'About',
            'name': 'Financial Data Collector',
            'description': 'Accelerate your data research process so you can move on from the grunt work',
-           'version': '1.1.0',
+           'version': '1.2.0',
            'copyright': '2021 TK',
-           'developer': 'AAC Market Strategy e-mobility Taekyu Kim'
+           'developer': 'Taekyu Kim'
        },
            {'type': 'MessageDialog',
             'menuTitle': 'How to use',
